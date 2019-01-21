@@ -20,9 +20,9 @@ static void Main(string[] args)
 
 {
 
-DateTime camera1;
+DateTime cam1;
 
-DateTime camera2;
+DateTime cam2;
 
 TimeSpan time;
 
@@ -32,19 +32,19 @@ double speed;
 
 int distance = 1;
 
-Console.WriteLine("Please enter the time in the format HH:MM:SS");
+Console.WriteLine("Enter the time in the format HH:MM:SS");
 
 Console.Write("What was the time of the first camera: ");
 
-camera1 = Convert.ToDateTime(Console.ReadLine());
+cam1 = Convert.ToDateTime(Console.ReadLine());
 
-Console.WriteLine("Please enter the time in the format HH:MM:SS");
+Console.WriteLine("Enter the time in the format HH:MM:SS");
 
 Console.Write("What was the time of the second camera: ");
 
-camera2 = Convert.ToDateTime(Console.ReadLine());
+cam2 = Convert.ToDateTime(Console.ReadLine());
 
-time = camera2 - camera1;
+time = cam2 - cam1;
 
 hours = time.TotalHours;
 
