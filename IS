@@ -1,0 +1,61 @@
+using System;
+
+using System.Collections.Generic;
+
+using System.Linq;
+
+using System.Text;
+
+using System.Threading.Tasks;
+
+namespace Challenege_2
+
+{
+
+class Program
+
+{
+
+static void Main(string[] args)
+
+{
+
+DateTime camera1;
+
+DateTime camera2;
+
+TimeSpan time;
+
+double hours;
+
+double speed;
+
+int distance = 1;
+
+Console.WriteLine("Please enter the time in the format HH:MM:SS");
+
+Console.Write("What was the time of the first camera: ");
+
+camera1 = Convert.ToDateTime(Console.ReadLine());
+
+Console.WriteLine("Please enter the time in the format HH:MM:SS");
+
+Console.Write("What was the time of the second camera: ");
+
+camera2 = Convert.ToDateTime(Console.ReadLine());
+
+time = camera2 - camera1;
+
+hours = time.TotalHours;
+
+speed = (distance / hours);
+
+Console.WriteLine(speed + "mph");
+
+Console.ReadKey();
+
+}
+
+}
+
+}
